@@ -30,11 +30,13 @@
     border-radius: 1.5rem
     width: 13.5rem
     outline: none
-    border: none
+    border: 1px solid var(--search-border-color)
     background: transparent
     color: var(--text)
     box-shadow: 0 1rem 4rem rgba(0,0,0,0.17)
     font-size: 1rem
+    &:hover, &:focus
+      background: var(--search-bg)
   &_label
     width: 1rem
     height: 1rem
@@ -195,7 +197,7 @@
     text-align: center
     justify-content: center
     &::before, &::after
-      background-image: url(../images/next.svg)
+      background-image: var(--nextIcon)
       height: 0.8rem
       width: 0.8rem
       background-size: 100%
@@ -268,7 +270,7 @@
       transform-origin: 50% 50%
       transition: transform 0.5s cubic-bezier(.19,1,.22,1)
       will-change: transform
-      background-image: url(../icons/sun.svg)
+      background-image: var(--sunIcon)
       background-size: 60%
       background-repeat: no-repeat
       background-position: center 
@@ -314,7 +316,7 @@
     transform-origin: 50% 50%
     border-radius: 50%
     background-color: var(--theme)
-    background-image: url(../icons/info.svg)
+    background-image: var(--infoIcon)
     background-size: 12%
     background-position: 50% 50%
     background-repeat: no-repeat
